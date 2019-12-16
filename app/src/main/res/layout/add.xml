@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="任务名"/>
+    //添加第一个按钮，来获取开始时间。
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取开始时间"
+        android:id="@+id/btnChoose1Date" />
+    //添加一个文本框来显示开始时间。
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始时间："
+        android:textStyle="italic" />
+
+    //添加第二个按钮，获取结束时间。
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取结束时间"
+        android:id="@+id/btnChoose2Date" />
+    //第二个文本框，接收显示结束时间。
+    <TextView
+        android:id="@+id/date2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="结束时间："
+        android:textStyle="italic" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/matter"
+        android:hint="任务内容"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/other"
+        android:hint="备注"/>
+
+</LinearLayout>
